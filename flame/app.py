@@ -19,9 +19,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuração do banco de dados
+# Se for usar MySQL, defina a variável `DATABASE_URL` no formato:
+#   mysql+pymysql://usuario:senha@host:porta/nome_do_banco
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql://usuario:senha@localhost:5432/nome_do_banco"
+    "mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco"
 )
 
 engine = create_engine(DATABASE_URL, echo=True)

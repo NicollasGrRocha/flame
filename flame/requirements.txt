@@ -1,7 +1,8 @@
 fastapi==0.104.1
 uvicorn==0.24.0
 sqlalchemy==2.0.23
-psycopg2-binary==2.9.9
-pydantic==2.5.0
+# Usando PyMySQL para MySQL (mais fácil no Windows que mysqlclient)
+pymysql==1.1.0
+# Use o extra [email] do pydantic se precisar de validação de email
 pydantic[email]==2.5.0
 python-dotenv==1.0.0
