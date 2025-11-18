@@ -1,0 +1,11 @@
+﻿venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+.DS_Store
+*.sqlite3
+instance/
+*.db
+.venv/
+pip-selfcheck.json
